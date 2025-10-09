@@ -7,6 +7,6 @@ export interface UserRepository {
   update(user: User): Promise<void>;
 }
 
-export interface IUserRepositoryWithDelete extends UserRepository {
+export interface UserRepositoryWithDelete extends UserRepository {
   delete(id: string): Promise<void>;
 }
